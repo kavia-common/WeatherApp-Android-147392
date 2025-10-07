@@ -16,4 +16,8 @@
     <string name="sunday">Sunday</string>
     <string name="label_warm">WARM</string>
     <string name="warm_unit">idx</string>
+    <string name="warm_info_title">Warm information</string>
+    <string name="warm_info_message_template">Warm index: %1$d\nFeels: %2$s\nTip: %3$s</string>
+    <string name="warm_icon_desc">Warm metric, double-tap for more information</string>
+    <string name="warm_info_unavailable">Warm info is not available.</string>
 </resources>

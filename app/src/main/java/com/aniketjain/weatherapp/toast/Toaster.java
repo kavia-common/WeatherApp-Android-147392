@@ -25,4 +25,23 @@ public class Toaster {
                 14,
                 "#EEEEEE");
     }
+
+    // PUBLIC_INTERFACE
+    /**
+     * Shows an informational toast message with neutral styling.
+     * This is used as a fallback or to show non-critical info like warm details.
+     *
+     * @param context Context to show the toast
+     * @param msg     Message to display
+     */
+    public static void infoToast(Context context, String msg) {
+        // Using the same custom toast style; in absence of a dedicated info icon, reuse check icon.
+        Toasty.custom(
+                context,
+                msg,
+                R.drawable.ic_baseline_check_24,
+                "#454B54",
+                14,
+                "#EEEEEE");
+    }
 }

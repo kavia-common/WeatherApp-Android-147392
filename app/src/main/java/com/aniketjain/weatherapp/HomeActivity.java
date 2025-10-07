@@ -172,6 +172,51 @@ import java.util.Objects;
                 Log.d("Error Voice", "Mic Error:  " + e);
             }
         });
+
+        // Warm info click
+        if (binding.layout.warmContainer != null) {
+            binding.layout.warmContainer.setOnClickListener(v -> {
+                MockWeatherProvider.WarmInfo info = null;
+                try {
+                    info = MockWeatherProvider.getWarmInfo();
+                } catch (Throwable t) {
+                    // Guard against any unexpected runtime/class issues
+                    Log.w("WarmInfo", "Failed to get warm info", t);
+                }
+
+                if (info == null) {
+                    Toaster.infoToast(this, getString(R.string.warm_info_unavailable));
+                    return;
+                }
+
+                String message = getString(
+                        R.string.warm_info_message_template,
+                        info.index,
+                        info.description != null ? info.description : "",
+                        info.tip != null ? info.tip : ""
+                );
+
+                try {
+                    new com.google.android.material.dialog.MaterialAlertDialogBuilder(this)
+                            .setTitle(R.string.warm_info_title)
+                            .setMessage(message)
+                            .setPositiveButton(android.R.string.ok, (dialog, which) -> dialog.dismiss())
+                            .show();
+                } catch (Throwable t) {
+                    // Fallback to AppCompat AlertDialog if Material isn't available
+                    try {
+                        new androidx.appcompat.app.AlertDialog.Builder(this)
+                                .setTitle(R.string.warm_info_title)
+                                .setMessage(message)
+                                .setPositiveButton(android.R.string.ok, null)
+                                .show();
+                    } catch (Throwable ignored) {
+                        // Final fallback to Toast
+                        Toaster.infoToast(this, message);
+                    }
+                }
+            });
+        }
     }
 
     private void setRefreshLayoutColor() {

@@ -344,15 +344,21 @@
 
         <!-- New Warm metric -->
         <LinearLayout
+            android:id="@+id/warm_container"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center_horizontal"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/warm_icon_desc">
 
             <ImageView
                 android:layout_width="45dp"
                 android:layout_height="45dp"
+                android:contentDescription="@string/warm_icon_desc"
                 android:src="@drawable/ic_warm" />
 
             <TextView

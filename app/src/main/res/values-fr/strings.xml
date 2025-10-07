@@ -16,4 +16,10 @@
     <string name="sunday">Dimanche</string>
     <string name="label_warm">CHALEUR</string>
     <string name="warm_unit">idx</string>
+
+    <!-- Added translations for warm info dialog -->
+    <string name="warm_info_title">Informations chaleur</string>
+    <string name="warm_info_message_template">Indice de chaleur : %1$d\nRessenti : %2$s\nConseil : %3$s</string>
+    <string name="warm_icon_desc">Métrique chaleur, double pression pour plus d’informations</string>
+    <string name="warm_info_unavailable">Les informations chaleur ne sont pas disponibles.</string>
 </resources>

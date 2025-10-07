@@ -861,3 +861,143 @@
 2025-10-07 05:52:47,545 - Knowledge - INFO - Updating org costs, total cost: 0
 2025-10-07 05:52:48,359 - Knowledge - INFO - Saving knowledge to Redis...
 2025-10-07 05:52:48,503 - Knowledge - INFO - Knowledge saved to Redis successfully
+2025-10-07 09:24:14,130 - Knowledge - INFO - Redis support added with prefix knowledge:b64623x:
+2025-10-07 09:24:14,593 - Knowledge - INFO - load persisted knowledge: begin
+2025-10-07 09:24:14,708 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:14,794 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:14,915 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/app/src/main/java/com/aniketjain/weatherapp/location/LocationCord.java
+2025-10-07 09:24:15,019 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:15,108 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:15,208 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/app/src/main/java/com/aniketjain/weatherapp/location/CityFinder.java
+2025-10-07 09:24:15,325 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:15,433 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:15,548 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml
+2025-10-07 09:24:15,659 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:15,753 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:15,845 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/app/src/main/res/drawable/ic_launcher_background.xml
+2025-10-07 09:24:15,981 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:16,069 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:16,158 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/app/src/main/java/com/aniketjain/weatherapp/network/InternetConnectivity.java
+2025-10-07 09:24:16,238 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:16,353 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:16,464 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/app/src/main/res/values/themes.xml
+2025-10-07 09:24:16,584 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:16,675 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:16,762 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/app/src/main/res/drawable/ic_baseline_check_24.xml
+2025-10-07 09:24:16,866 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:17,033 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:17,110 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/app/src/main/res/values/colors.xml
+2025-10-07 09:24:17,234 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:17,308 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:17,389 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/app/src/main/res/values/strings.xml
+2025-10-07 09:24:17,504 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:17,592 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:17,680 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/app/src/main/java/com/aniketjain/weatherapp/url/URL.java
+2025-10-07 09:24:17,802 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:17,874 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:17,974 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/app/src/main/res/values-de/strings.xml
+2025-10-07 09:24:18,072 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:18,197 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:18,271 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/app/src/main/java/com/aniketjain/weatherapp/SplashScreen.java
+2025-10-07 09:24:18,382 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:18,482 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:18,591 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/app/src/main/AndroidManifest.xml
+2025-10-07 09:24:18,690 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:18,817 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:18,908 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/app/src/main/res/layout/main_layout.xml
+2025-10-07 09:24:19,017 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:19,194 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:19,303 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/app/src/main/java/com/aniketjain/weatherapp/update/UpdateUI.java
+2025-10-07 09:24:19,425 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:19,523 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:19,616 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/app/src/main/res/mipmap-anydpi-v26/ic_main_round.xml
+2025-10-07 09:24:19,723 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:19,807 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:19,899 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/app/src/main/res/layout/activity_splash_screen.xml
+2025-10-07 09:24:20,010 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:20,129 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:20,240 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/app/src/test/java/com/aniketjain/weatherapp/ExampleUnitTest.java
+2025-10-07 09:24:20,329 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:20,446 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:20,527 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/settings.gradle
+2025-10-07 09:24:20,634 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:20,719 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:20,800 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/app/src/main/res/values-es/strings.xml
+2025-10-07 09:24:20,938 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:21,044 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:21,138 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/app/src/main/res/values-fr/strings.xml
+2025-10-07 09:24:21,249 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:21,375 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:21,492 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/app/src/androidTest/java/com/aniketjain/weatherapp/ExampleInstrumentedTest.java
+2025-10-07 09:24:21,615 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:21,711 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:21,813 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/app/src/main/res/layout/day_item_layout.xml
+2025-10-07 09:24:21,927 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:22,011 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:22,099 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/app/src/main/java/com/aniketjain/weatherapp/adapter/DaysAdapter.java
+2025-10-07 09:24:22,193 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:22,304 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:22,469 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/app/src/main/res/layout/activity_home.xml
+2025-10-07 09:24:22,566 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:22,692 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:22,791 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/README.md
+2025-10-07 09:24:22,910 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:22,997 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:23,106 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/build.gradle
+2025-10-07 09:24:23,236 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:23,330 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:23,444 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/app/src/main/java/com/aniketjain/weatherapp/HomeActivity.java
+2025-10-07 09:24:23,524 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:23,640 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:23,736 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/app/build.gradle
+2025-10-07 09:24:23,862 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:23,958 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:24,068 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/CODE_OF_CONDUCT.md
+2025-10-07 09:24:24,165 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:24,276 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:24,391 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/app/src/main/res/drawable/ic_main_background.xml
+2025-10-07 09:24:24,495 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:24,589 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:24,660 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/app/src/main/java/com/aniketjain/weatherapp/toast/Toaster.java
+2025-10-07 09:24:24,762 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:24,854 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:24,943 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/app/src/main/res/raw/cloud_cycle_lottie.json
+2025-10-07 09:24:25,081 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:25,204 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:25,303 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/app/src/main/res/mipmap-anydpi-v26/ic_main.xml
+2025-10-07 09:24:25,425 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:25,526 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:25,636 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/app/src/main/res/values-night/strings.xml
+2025-10-07 09:24:25,732 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:25,821 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:25,903 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/index.html
+2025-10-07 09:24:26,018 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:26,145 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:26,253 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/app/proguard-rules.pro
+2025-10-07 09:24:26,371 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:26,494 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:26,618 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/app/src/main/res/drawable/ic_launcher_foreground.xml
+2025-10-07 09:24:26,756 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:26,860 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:26,952 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/CONTRIBUTING.md
+2025-10-07 09:24:27,061 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:27,153 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:27,244 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml
+2025-10-07 09:24:27,362 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:27,449 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:27,532 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/SECURITY.md
+2025-10-07 09:24:27,657 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:27,770 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:27,889 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/app/src/main/res/drawable/ic_baseline_error_outline_24.xml
+2025-10-07 09:24:27,973 - Knowledge - INFO - Found code-base-name: https://github.com/kavia-common/WeatherApp-Android-147392.git:kavia-master
+2025-10-07 09:24:28,092 - Knowledge - INFO - Found code_base: <app.utils.kg_build.knowledge.KnowledgeCodeBase object at 0x7f7dccfa9310>
+2025-10-07 09:24:28,175 - Knowledge - INFO - process ingested knowledge for /app/data/T0015/147392/b64623x/WeatherApp-Android-147392/app/src/main/res/values-night/themes.xml
+2025-10-07 09:24:28,289 - Knowledge - INFO - load persisted knowledge: end
+2025-10-07 09:24:28,367 - Knowledge - INFO - load persisted docinfo: begin
+2025-10-07 09:24:28,458 - Knowledge - INFO - load persisted docinfo: end
+2025-10-07 09:24:28,621 - Knowledge - INFO - worker kw1 created with dedicated MongoDB connection (total: 1)
+2025-10-07 09:24:28,745 - Knowledge - INFO - knowledge worker kw1 start
+2025-10-07 09:24:28,827 - Knowledge - INFO - Knowledge creation complete
+2025-10-07 09:24:28,915 - Knowledge - INFO - Updating org costs, total cost: 0
+2025-10-07 09:24:29,767 - Knowledge - INFO - Saving knowledge to Redis...
+2025-10-07 09:24:29,889 - Knowledge - INFO - Knowledge saved to Redis successfully

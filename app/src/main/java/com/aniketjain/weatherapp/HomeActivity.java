@@ -17,6 +17,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
+import android.view.KeyEvent;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -52,7 +53,13 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.Objects;
 
-public class HomeActivity extends AppCompatActivity {
+ // PUBLIC_INTERFACE
+ /**
+  * HomeActivity is the main screen that lets users search by city or use current location
+  * to retrieve weather data and displays current and daily forecasts.
+  * It wires up UI interactions, handles network requests, and shows loading/error states.
+  */
+ public class HomeActivity extends AppCompatActivity {
 
     private final int WEATHER_FORECAST_APP_UPDATE_REQ_CODE = 101;   // for app update
     private static final int PERMISSION_CODE = 1;                   // for user location permission
@@ -128,8 +135,14 @@ public class HomeActivity extends AppCompatActivity {
             hideKeyboard(view);
             return false;
         });
-        binding.layout.cityEt.setOnEditorActionListener((textView, i, keyEvent) -> {
-            if (i == EditorInfo.IME_ACTION_GO) {
+        binding.layout.cityEt.setOnEditorActionListener((textView, actionId, keyEvent) -> {
+            boolean isEnterKey = keyEvent != null
+                    && keyEvent.getKeyCode() == KeyEvent.KEYCODE_ENTER
+                    && keyEvent.getAction() == KeyEvent.ACTION_DOWN;
+            if (actionId == EditorInfo.IME_ACTION_GO
+                    || actionId == EditorInfo.IME_ACTION_SEARCH
+                    || actionId == EditorInfo.IME_ACTION_DONE
+                    || isEnterKey) {
                 searchCity(binding.layout.cityEt.getText().toString());
                 hideKeyboard(textView);
                 return true;
@@ -171,11 +184,18 @@ public class HomeActivity extends AppCompatActivity {
     }
 
     private void searchCity(String cityName) {
-        if (cityName == null || cityName.isEmpty()) {
+        String q = cityName != null ? cityName.trim() : "";
+        if (q.isEmpty()) {
             Toaster.errorToast(this, "Please enter the city name");
-        } else {
-            setLatitudeLongitudeUsingCity(cityName);
+            return;
         }
+        if (!isInternetConnected(this)) {
+            Toaster.errorToast(this, "Please check your internet connection");
+            return;
+        }
+        // Show loading while we resolve city -> coords and fetch weather
+        hideMainLayout();
+        setLatitudeLongitudeUsingCity(q);
     }
 
     private void getDataUsingNetwork() {
@@ -198,15 +218,26 @@ public class HomeActivity extends AppCompatActivity {
         RequestQueue requestQueue = Volley.newRequestQueue(HomeActivity.this);
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, URL.getCity_url(), null, response -> {
             try {
-                LocationCord.lat = response.getJSONObject("coord").getString("lat");
-                LocationCord.lon = response.getJSONObject("coord").getString("lon");
+                double lat = response.getJSONObject("coord").getDouble("lat");
+                double lon = response.getJSONObject("coord").getDouble("lon");
+                LocationCord.lat = String.valueOf(lat);
+                LocationCord.lon = String.valueOf(lon);
                 getTodayWeatherInfo(cityName);
                 // After the successfully city search the cityEt(editText) is Empty.
                 binding.layout.cityEt.setText("");
             } catch (JSONException e) {
                 e.printStackTrace();
+                Toaster.errorToast(this, "Unable to parse location for the entered city");
+                hideProgressBar();
             }
-        }, error -> Toaster.errorToast(this, "Please enter the correct city name"));
+        }, error -> {
+            hideProgressBar();
+            String msg = "Request failed. Please check the city name or your internet connection";
+            if (error != null && error.networkResponse != null && error.networkResponse.statusCode == 401) {
+                msg = "API authorization failed. Please check your API key.";
+            }
+            Toaster.errorToast(this, msg);
+        });
         requestQueue.add(jsonObjectRequest);
     }
 
@@ -237,8 +268,17 @@ public class HomeActivity extends AppCompatActivity {
                 setUpDaysRecyclerView();
             } catch (JSONException e) {
                 e.printStackTrace();
+                Toaster.errorToast(this, "Failed to parse weather data");
+                hideProgressBar();
             }
-        }, null);
+        }, error -> {
+            hideProgressBar();
+            String msg = "Failed to fetch weather data. Please try again.";
+            if (error != null && error.networkResponse != null && error.networkResponse.statusCode == 401) {
+                msg = "API authorization failed. Please check your API key.";
+            }
+            Toaster.errorToast(this, msg);
+        });
         requestQueue.add(jsonObjectRequest);
         Log.i("json_req", "Day 0");
     }
@@ -296,6 +336,10 @@ public class HomeActivity extends AppCompatActivity {
         }
     }
 
+    // PUBLIC_INTERFACE
+    /**
+     * Receives the runtime permission result for location and continues fetching data when granted.
+     */
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);

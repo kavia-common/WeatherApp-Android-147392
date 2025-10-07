@@ -350,7 +350,7 @@
             android:layout_weight="1"
             android:gravity="center_horizontal"
             android:orientation="vertical"
-            android:background="?attr/selectableItemBackgroundBorderless"
+            android:foreground="?attr/selectableItemBackground"
             android:clickable="true"
             android:focusable="true"
             android:contentDescription="@string/warm_icon_desc">

@@ -250,7 +250,7 @@
         android:gravity="center"
         android:orientation="horizontal"
         android:paddingHorizontal="6dp"
-        android:weightSum="3">
+        android:weightSum="4">
 
         <LinearLayout
             android:layout_width="0dp"
@@ -334,6 +334,37 @@
 
             <TextView
                 android:id="@+id/humidity_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-6dp"
+                android:fontFamily="@font/koho_regular"
+                android:textColor="@color/textColor"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- New Warm metric -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_warm" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/koho_regular"
+                android:text="@string/label_warm"
+                android:textColor="@color/textColor"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/warm_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="-6dp"

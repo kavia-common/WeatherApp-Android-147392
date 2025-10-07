@@ -14,4 +14,6 @@
     <string name="friday">Viernes</string>
     <string name="saturday">Sábado</string>
     <string name="sunday">Domingo</string>
+    <string name="label_warm">CALOR</string>
+    <string name="warm_unit">idx</string>
 </resources>

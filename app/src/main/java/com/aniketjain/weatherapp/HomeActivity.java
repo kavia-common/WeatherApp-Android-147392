@@ -33,6 +33,7 @@ import com.aniketjain.weatherapp.databinding.ActivityHomeBinding;
 import com.aniketjain.weatherapp.location.LocationCord;
 import com.aniketjain.weatherapp.toast.Toaster;
 import com.aniketjain.weatherapp.update.UpdateUI;
+import com.aniketjain.weatherapp.mock.MockWeatherProvider;
 import com.aniketjain.weatherapp.url.URL;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
@@ -41,7 +42,7 @@ import com.google.android.play.core.appupdate.AppUpdateManager;
 import com.google.android.play.core.appupdate.AppUpdateManagerFactory;
 import com.google.android.play.core.install.model.AppUpdateType;
 import com.google.android.play.core.install.model.UpdateAvailability;
-import com.google.android.play.core.tasks.Task;
+
 
 import org.json.JSONException;
 
@@ -260,6 +261,8 @@ public class HomeActivity extends AppCompatActivity {
         binding.layout.pressureTv.setText(pressure + " mb");
         binding.layout.windTv.setText(wind_speed + " km/h");
         binding.layout.humidityTv.setText(humidity + "%");
+        // Bind mock warm value
+        binding.layout.warmTv.setText(MockWeatherProvider.getWarm() + " " + getString(R.string.warm_unit));
     }
 
     private String translate(String dayToTranslate) {
@@ -315,8 +318,7 @@ public class HomeActivity extends AppCompatActivity {
 
     private void checkUpdate() {
         AppUpdateManager appUpdateManager = AppUpdateManagerFactory.create(HomeActivity.this);
-        Task<AppUpdateInfo> appUpdateInfoTask = appUpdateManager.getAppUpdateInfo();
-        appUpdateInfoTask.addOnSuccessListener(appUpdateInfo -> {
+        appUpdateManager.getAppUpdateInfo().addOnSuccessListener(appUpdateInfo -> {
             if (appUpdateInfo.updateAvailability() == UpdateAvailability.UPDATE_AVAILABLE
                     && appUpdateInfo.isUpdateTypeAllowed(AppUpdateType.IMMEDIATE)) {
                 try {

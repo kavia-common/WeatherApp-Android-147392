@@ -14,4 +14,6 @@
     <string name="friday">Vendredi</string>
     <string name="saturday">Samedi</string>
     <string name="sunday">Dimanche</string>
+    <string name="label_warm">CHALEUR</string>
+    <string name="warm_unit">idx</string>
 </resources>
